@@ -8,7 +8,9 @@ module.exports = {
     
     extend: {fontFamily: {
       'lobster': ['cursive', 'lobster'],
-      'manrope': ['sans-serif', 'Manrope']},
+      'manrope': ['sans-serif', 'Manrope'],
+      'dmsans': ['sans-serif', 'DM Sans']
+    },
   },
   plugins: [],
   }

@@ -1,25 +1,41 @@
 <template >
-<body class="h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(https://i.pinimg.com/originals/0c/73/ac/0c73ac2c27831c222c774b69bd033e33.png)">
-    <div>
-      <button class="shadow-md  box-content p-2 border-2  text-white bg-stone-600 transition duration 300 hover:bg-gray-200 hover:text-black hover:scale-150 hover:underline ...">
-      <RouterLink to ="/">Home</RouterLink>
-    </button>
-    <button class="shadow-md  box-content p-2 border-2 text-white bg-stone-600 transition duration 300 hover:bg-gray-200 hover:text-black hover:scale-150 hover:underline ...">
-    <RouterLink to ="/profile">Profile</RouterLink>
+ <body class="h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(https://th.bing.com/th/id/R.74145ab250096349756ef7956cd14e07?rik=q11v60h5NWtqGQ&pid=ImgRaw&r=0)">
+ 
+    <div class="bg-black flow-root">
+    <span class="float-right mt-5 mr-6 ">
+      <button class="shadow-md rounded box-content m-5 hover:scale-150 hover:underline ...">
+        <RouterLink to ="/">
+          <font-awesome-icon icon="fa-solid fa-house" class="text-white text-3xl transition duration-300 " />
+        </RouterLink>
+      </button>
+   
+      <button class="shadow-md rounded box-content mt-5 ml-2 hover:scale-150 hover:underline ...">
+        <RouterLink to ="/profile">
+          <font-awesome-icon icon="fa-solid fa-user" class="text-white text-3xl transition duration-300 " />
+        </RouterLink>
+      </button>
 
-  </button>
-    </div>
-    
+    </span>
+     
+      <div class="p-8 text-7xl text-center rounded box-decoration-slice  text-white px-3 font-manrope float-left mr-12 ...">
+         <b>BPN</b> 
+      </div> 
+     
+  </div>
+  <br>
+
 
     <div class="flex flex-row">
-        <profileCard v-for="member in members" :key="member" class="w-1/3"
+        <profileCard v-for="member in members" :key="member" class="w-1/4 m-7"
             :name="member.name"
             :nickname="member.nickname"
             :age="member.age"
             :birthdate="member.birthdate"
             :image="member.image">
             
+            
         </profileCard>
+
     
     </div>
     
