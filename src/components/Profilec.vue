@@ -11,8 +11,9 @@
             </div>
         <div class="rounded-full float-left w-56 h-56 bg-cover m-2 font-manrope" :style="getUrlImage(image)"> </div>
         <br>
+        <span> <button class="text-white invisible hover:visible">Hello</button>
         <font-awesome-icon icon="fa-brands fa-instagram" class="float-right text-5xl hover:scale-110 mr-2 transition duration-300 hover:text-white " title="instagram"/>
-        <br><br><br>
+        </span><br><br><br>
         <font-awesome-icon icon="fa-brands fa-square-twitter" class="ml-32 mr-2 float-right text-5xl hover:scale-110 transition duration-300 hover:text-white" title="twitter"/>
         <br><br><br>
         <font-awesome-icon icon="fa-brands fa-line" class="ml-32 mr-2 float-right text-5xl hover:scale-110 transition duration-300 hover:text-white  " title="line"/>

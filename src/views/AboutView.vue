@@ -13,3 +13,17 @@
   }
 }
 </style>
+
+
+
+export default {
+  data()
+  {
+      return {
+          count : localStorage.getItem('counter') || 0 ,
+          dropdown : false,
+          name: "cream"
+      } 
+  }
+
+}

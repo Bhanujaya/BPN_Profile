@@ -1,8 +1,16 @@
 <template>
-    <div>
-        <button @click="count++">Add1</button>
-        <div>Count is {{count}}</div>'
+    <span>
+        <button @click="count++" localStorage.setItem(counter, JSON.stringify(count))>
+            
+            <font-awesome-icon icon="fa-solid fa-heart" class="text-pink-300 hover:scale-125 hover:text-red-800 transition duration-200 animate-bounce scale-105"/>
+        </button>
+
+
         
+        <div>{{count}}</div>
+    </span>                                                                                                                                                                               
+    
+    <div>
         <button @click="dropdown=!dropdown">menu</button>
         <div class="rounded-Lg" v-if="dropdown"> this is dropdown </div>
 
@@ -26,7 +34,7 @@ export default {
     data()
     {
         return {
-            count : 0,
+            count : localStorage.getItem('counter') || 1 ,
             dropdown : false,
             name: "cream"
         } 
